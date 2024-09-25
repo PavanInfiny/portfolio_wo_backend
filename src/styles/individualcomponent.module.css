@@ -1,0 +1,24 @@
+.individualcomponent{
+  /* padding: 5px; */
+  margin-top: 25px;
+  margin-left: 6.8%;
+  width: 40%;
+  height: 350px;
+  background-color: #787878;
+  flex: 0 1 40%;
+  border-radius: 20px;
+  box-shadow: #f46363;
+}
+.individualcomponent h3{
+  margin: 2%;
+  text-align: center;
+}
+.individualcomponent p{
+  text-align: center;
+  margin: 2%;
+}
+.individualcomponent img{
+  margin-left: 5%;
+  width: 90%;
+  height: 60%;
+}

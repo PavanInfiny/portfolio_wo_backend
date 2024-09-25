@@ -1,0 +1,19 @@
+.pagebg{
+  width: 100vm;
+  height:fit-content;
+  background-color: #000000;
+
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.section{
+  background-color: #101010;
+  width: 90%;
+  margin-left: 5%;
+  height: 100%;
+  align-items: center;
+  align-self: center;
+}
