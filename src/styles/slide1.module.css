@@ -4,11 +4,13 @@
   color: aliceblue;
   overflow: hidden;
 }
+
 .complete h1 {
   animation: nameanime 3s infinite reverse;
   overflow: hidden;
 }
 .desc {
+  font-family: 'Roboto', sans-serif;
   flex-direction: column;
   margin-top: 10%;
   justify-content: center;
@@ -44,4 +46,8 @@
   padding: 3%;
   display: flex;
   justify-content: space-around;
+}
+.slide1:hover{
+  border: 3px solid rgb(229, 229, 229);
+  transition: 2s;
 }

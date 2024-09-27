@@ -1,10 +1,6 @@
 .projects{
   margin-top: 20px;
- width: 100%;
- /* height: fit-content; */
- display: flex;
- flex-wrap: wrap;
- /* margin-bottom: 5px; */
- /* justify-content: space-around; */
- /* background-color: #c60000; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
