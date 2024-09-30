@@ -2,3 +2,50 @@
   text-align: center;
   justify-content: center;
 }
+.technologyused{
+  margin-left: 10px;
+}
+.center{
+  margin-left: 15%;
+  display: flex;
+  flex-direction: row;
+}
+.subtitle{
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  margin-top: 2%;
+  margin-left: 15%;
+  font-weight: 300;
+  color: #868686  ;
+  /* text-align: center; */
+}
+.title{
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  margin-top: 2%;
+  font-weight: Bold;
+  color: #41FDFE  ;
+  text-align: center;
+}
+.table{
+  width: fit-content;
+  height: fit-content;
+  justify-self: center;
+  
+}
+.footer{
+  width: 80%;
+  text-align: center;
+  align-self: center;
+  /* border: solid white; */
+  background-color: #222222;
+  border-radius: 10px;
+  justify-content: center;
+}
+.complete{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

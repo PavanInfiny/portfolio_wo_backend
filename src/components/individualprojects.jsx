@@ -1,0 +1,32 @@
+import React from "react";
+import { Link } from "react-router-dom";
+// import * as Images from "../assets";
+import "@fontsource/roboto";
+import css from "../styles/individualprojects.module.css";
+const Individualcomponent = (props) => {
+  return (
+    <>
+      <div className={`card ${css.individualcomponent}`}>
+        <h3 className="card-text" style={{ textAlign: "center" }}>
+          {props.title}
+        </h3>
+        <img src={props.pic} className="card-img-top" alt="..." />
+        <div className="card-body">
+          <p className="card-text">{props.desc}</p>
+        </div>
+        <div className={css.knowmore}>
+          <button type="button" className={`btn btn-primary`}>
+            <Link style={{color:"white", textDecoration:"none"}} to={`/projects/${props.id}`}>Know More</Link>
+          </button>
+        </div>
+      </div>
+    </>
+    // <div className={css.individualcomponent}>
+    //   <h3 className={css.title}>{props.title}</h3>
+    //   <img className={css.image} src={props.pic} alt="no image"/>
+    //   <p className={css.desc}>{props.desc}</p>
+    // </div>
+  );
+};
+
+export default Individualcomponent;

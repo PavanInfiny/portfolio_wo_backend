@@ -5,18 +5,28 @@
   overflow: hidden;
 }
 
-.complete h1 {
+.h5tag {
+  color: aliceblue;
   animation: nameanime 3s infinite reverse;
   overflow: hidden;
 }
 .desc {
   font-family: 'Roboto', sans-serif;
   flex-direction: column;
-  margin-top: 10%;
+  /* margin-top: 10%; */
   justify-content: center;
+  color: aliceblue;
   overflow: hidden;
 
 }
+.right{
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .complete img {
   margin-left: 10%;
   max-width: 80%;
@@ -38,6 +48,7 @@
     opacity: 0;
   }
 }
+
 .slide1 {
   border: 3px dotted rgb(96, 96, 96);
   margin: 0px 5% 0px 5%;
@@ -45,7 +56,8 @@
   height: 50%;
   padding: 3%;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: center; */
+  align-items: center; 
 }
 .slide1:hover{
   border: 3px solid rgb(229, 229, 229);

@@ -1,34 +1,37 @@
-import React from "react";
-import Individualcomponent from "./individualcomponent";
+import React, { useContext } from "react";
+import Individualcomponent from "./individualprojects";
 import css from "../styles/projects.module.css";
-import img1 from '../assets/1.png';
-import img2 from '../assets/2.png';
-import img3 from '../assets/3.png';
+import img1 from "../assets/1.png";
+import img2 from "../assets/2.png";
+import img3 from "../assets/3.png";
+import { Contextstore } from "../store/store";
 const Projects = () => {
   // let projectdesc={
   //   protitle:title,
   //   prodesc:desc,
   //   proimg:""
   // }
-  let ary=[0,1,2,2];
-  let i=[img1,img2,img3,img3];
-  let title = ["Iot project", "Finfriend", "Optipath","portfolio"];
-  let desc = [
-    "This project involved designing an automated water level indicator using Arduino and Bluetooth sensors, enabling real-time monitoring via mobile devices and showcasing IoT skills.",
-    "FIN FRIEND is a website for managing expenses and fairly dividing them among groups, built with HTML, CSS, and JavaScript for easy use.",
-    "OPTIPATH is a Java web application that visualizes Dijkstras algorithm to find the shortest path between two points on a map.","OPTIPATH is a Java web application that visualizes Dijkstras algorithm to find the shortest path between two points on a map."
-  ];
+  let ary = [1, 2, 3, 4, 5];
+  let i = [img1, img2, img3, img3, img2];
+ const obj=useContext(Contextstore);
+ const obj2=obj.projectdetail;
+ 
   return (
     <>
       <div id="projects">
-        <h1 style={{ marginTop: "40px", textAlign: "center", color: "white"} }>
+        <h1 style={{ marginTop: "40px", textAlign: "center", color: "white" }}>
           Projects
         </h1>
       </div>
       <div className={css.projects}>
-
-          {ary.map(n=><Individualcomponent title={title[n]} desc={desc[n]} pic={i[n]}></Individualcomponent>)}
-        
+        {obj2.map((n) => (
+          <Individualcomponent
+            title={n.projecttitle}
+            desc={n.projectdesc}
+            pic={i[0]}
+            id={n.projectid}
+          ></Individualcomponent>
+        ))}
       </div>
     </>
   );

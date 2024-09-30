@@ -6,7 +6,7 @@ function Contact() {
   let link=["","","http://www.linkedin.com/in/pavan-kumar-p-ab7933259","https://github.com/PavanInfiny"]
   return (
     <>
-      <div>
+      <div className="footer">
         <div>
           <h1
             style={{ marginTop: "40px", textAlign: "center", color: "white" }}
@@ -18,9 +18,11 @@ function Contact() {
         <div className={css.Contact}>
           {ind.map(n=><Individualcontact ways={cont[n]} link={link[n]}></Individualcontact>)}
         </div>
+        <br />
+
       </div>
-      <br />
-      <br />
+      
+
     </>
   );
 }

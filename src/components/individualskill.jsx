@@ -8,14 +8,14 @@ function Individualskills(props) {
           <h4>{props.sname}</h4>
         </div>
         <div className={css.skillprogressbar}>
-          <div class="progress">
+          <div className="progress">
             <div
-              class={`progress-bar w-${props.sprogress}`}
+              className={`progress-bar w-${props.sprogress}`}
             >{`${props.sprogress}%`}</div>
           </div>
         </div>
         <div className={css.notes}>
-            <a href="">notes</a>
+          <a href="">notes</a>
         </div>
       </div>
     </>
