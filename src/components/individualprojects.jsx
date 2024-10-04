@@ -4,17 +4,19 @@ import { Link } from "react-router-dom";
 import "@fontsource/roboto";
 import css from "../styles/individualprojects.module.css";
 const Individualcomponent = (props) => {
+  console.log('in the individualprojects ',props.id);
   return (
+
     <>
       <div className={`card ${css.individualcomponent}`}>
-        <h3 className="card-text" style={{ textAlign: "center" }}>
+        <h3 className="card-text" style={{ textAlign: "center" ,opacity: "0.7" , textalign: "center",color: "aqua"}}>
           {props.title}
         </h3>
         <img src={props.pic} className="card-img-top" alt="..." />
-        <div className="card-body">
+        <div className={`card-body ${css.descr}`}>
           <p className="card-text">{props.desc}</p>
         </div>
-        <div className={css.knowmore}>
+        <div style={{marginBottom:"3%"}} className={css.knowmore}>
           <button type="button" className={`btn btn-primary`}>
             <Link style={{color:"white", textDecoration:"none"}} to={`/projects/${props.id}`}>Know More</Link>
           </button>

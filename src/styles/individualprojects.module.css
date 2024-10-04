@@ -1,20 +1,24 @@
 .individualcomponent{
   /* padding: 5px; */
+  border-color: lightsteelblue;
+  border-width: 0.1px;
+  padding: 1%;
+  background-color: initial;
   margin-top: 25px;
   margin-left: 6.8%;
   width: 41%;
   height: fit-content;
-  background-color: #ffffff;
+  box-shadow: 10px 10px white ;
   flex: 0 1 40%;
   border-radius: 20px;
-  box-shadow: #f46363;
+  margin-bottom: 4%;
 }
 .individualcomponent:hover{
 /* flex: 0 1 42%;
 height: 360px;
 margin-left: 5.8%; */
 transform: scale(1.05,1.05);
- background-color: #fff;
+ /* background-color: #c2c2c2; */
  transition: 1s;
  z-index: 1;
 }
@@ -38,4 +42,16 @@ transform: scale(1.05,1.05);
   width: fit-content;
   align-items: center;
   align-self: center;
+}
+element.style {
+    color: darkgray;
+}
+element.style {
+  border-color: lightsteelblue;
+  border-width: thick;
+  background-color: initial;
+}
+.descr{
+  color: darkgray;
+  
 }

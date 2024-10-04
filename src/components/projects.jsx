@@ -29,7 +29,7 @@ const Projects = () => {
             title={n.projecttitle}
             desc={n.projectdesc}
             pic={i[0]}
-            id={n.projectid}
+            id={n.id}
           ></Individualcomponent>
         ))}
       </div>

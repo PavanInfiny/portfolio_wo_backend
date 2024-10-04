@@ -49,3 +49,8 @@
   display: flex;
   justify-content: center;
 }
+.project{
+    border-color: lightsteelblue;
+    border-width: thick;
+    background-color: initial;
+}
