@@ -6,17 +6,17 @@ function Contact() {
   let link=["","","http://www.linkedin.com/in/pavan-kumar-p-ab7933259","https://github.com/PavanInfiny"]
   return (
     <>
-      <div className="footer">
+      <div className="footer" id="contact">
         <div>
           <h1
-            style={{ marginTop: "40px", textAlign: "center", color: "white" }}
+            style={{ marginTop: "10px", textAlign: "center", color: "white" }}
           >
             Contact
           </h1>
           <br />
         </div>
         <div className={css.Contact}>
-          {ind.map(n=><Individualcontact ways={cont[n]} link={link[n]}></Individualcontact>)}
+          {ind.map(n=><Individualcontact n={n} ways={cont[n]} link={link[n]}></Individualcontact>)}
         </div>
         <br />
 

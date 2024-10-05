@@ -15,7 +15,6 @@ const Projects = () => {
   let i = [img1, img2, img3, img3, img2];
  const obj=useContext(Contextstore);
  const obj2=obj.projectdetail;
- 
   return (
     <>
       <div id="projects">
@@ -28,7 +27,7 @@ const Projects = () => {
           <Individualcomponent
             title={n.projecttitle}
             desc={n.projectdesc}
-            pic={i[0]}
+            pic={n.img}
             id={n.id}
           ></Individualcomponent>
         ))}

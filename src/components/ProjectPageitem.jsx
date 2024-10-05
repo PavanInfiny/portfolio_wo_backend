@@ -7,28 +7,24 @@ import "@fontsource/open-sans";
 import Technology from "./Technology";
 import { useParams } from "react-router-dom";
 import Workingpoints from "./Workingpoints";
+import { Popover } from "bootstrap";
 
 function ProjectPageitem(props) {
-  const {id} = useParams();
-  const obj = useContext(Contextstore)
+  const { id } = useParams();
+  const obj = useContext(Contextstore);
   const obj2 = obj.projectdetail.filter((i) => i.id == id);
-  const loading=obj.loading;
+  const loading = obj.loading;
 
   const setprojectdetail = obj.setprojectdetail;
-  console.log("point 1",obj);
+  console.log("point 1", obj);
   // console.log("point 2",obj3);
-  console.log("point 3  :",id);
+  console.log("point 3  :", id);
   // const obj2 = obj3.filter((i) => i.id == id);
-  console.log("point 2");
-  
+  console.log("point 2,img", obj2[0].img);
 
   window.scrollTo(0, 0);
-  if(loading){
-    return(
-      <>
-      loading
-      </>
-    )
+  if (loading) {
+    return <>loading</>;
   }
 
   return (
@@ -72,13 +68,13 @@ function ProjectPageitem(props) {
               <tr>
                 {/* <th scope="row">1</th> */}
                 <td>
-                  <a href="">link</a>
+                  <a href={obj2[0].ppt}>link</a>
                 </td>
                 <td>
-                  <a href="">link</a>
+                  <a href={obj2[0].report}>link</a>
                 </td>
                 <td>
-                  <a href="">link</a>
+                  <a href={obj2[0].code}>link</a>
                 </td>
               </tr>
             </tbody>
@@ -94,13 +90,14 @@ function ProjectPageitem(props) {
           <h5>IMAGES</h5>
         </div>
         <br />
-        <div className={css.photos}></div>
+        <div className={css.photos}>
+          <img  style={{width:"100%",height:"100%"}} src={obj2[0].img} alt="error" />
+        </div>
       </div>
       <br />
       <br />
     </>
   );
 }
-
 
 export default ProjectPageitem;

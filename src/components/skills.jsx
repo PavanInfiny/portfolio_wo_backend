@@ -1,9 +1,18 @@
+import { useContext } from "react";
 import Individualskills from "./individualskill";
+import { Contextstore } from "../store/store";
 function Skills(){
-  let slno=[0,1]
-  let skills=["Java","git"];
-  let progress=[75,50];
-  let notes=[" "," "];
+  const contextobj=useContext(Contextstore);
+  const skillobjarray=contextobj.skills;
+  console.log("skill",skillobjarray)
+  const skillloading=contextobj.skillload;
+  const progress=[75,50];
+  // skillobjarray.map(n=>console.log("consolr",n.percent));
+  console.log("through obj",skillobjarray.percent);
+  console.log("direst",progress[1]);
+  if(skillloading){
+    return "loading";
+  }
   return (
     <>
     <div id="skills">
@@ -14,7 +23,8 @@ function Skills(){
       </div>
       <br />
       <div>
-          {slno.map(n=><Individualskills sname={skills[n]} sprogress={progress[n]} snotes={notes[n]} slno={n}></Individualskills>)}
+          {skillobjarray.map(n=>(
+            <Individualskills sname={n.name} sprogress={n.percent} snotes={n.link} slno={n.id}></Individualskills>))}
       </div>
     </>
   );
