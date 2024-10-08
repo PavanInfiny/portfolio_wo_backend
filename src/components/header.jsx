@@ -9,13 +9,8 @@ function Header() {
           <div className={css.nav}>
             <ul className={css.headeritems}>
               <li className={css.headeritem}>
-                <Link className={css.item} to={"#header"}>
+                <Link className={css.item} to={"/"}>
                   Home
-                </Link>
-              </li>
-              <li className={css.headeritem}>
-                <Link className={css.item} to={"/#projects"}>
-                  Projects
                 </Link>
               </li>
               <li className={css.headeritem}>
@@ -24,8 +19,8 @@ function Header() {
                 </a>
               </li>
               <li className={css.headeritem}>
-                <a className={css.item} href="#contacts">
-                  contact
+                <a className={css.item} href="/admin">
+                  Admin
                 </a>
               </li>
             </ul>

@@ -11,8 +11,6 @@ const Projects = () => {
   //   prodesc:desc,
   //   proimg:""
   // }
-  let ary = [1, 2, 3, 4, 5];
-  let i = [img1, img2, img3, img3, img2];
  const obj=useContext(Contextstore);
  const obj2=obj.projectdetail;
   return (

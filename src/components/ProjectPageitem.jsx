@@ -8,6 +8,7 @@ import Technology from "./Technology";
 import { useParams } from "react-router-dom";
 import Workingpoints from "./Workingpoints";
 import { Popover } from "bootstrap";
+import Loading from "./loading";
 
 function ProjectPageitem(props) {
   const { id } = useParams();
@@ -19,12 +20,15 @@ function ProjectPageitem(props) {
   console.log("point 1", obj);
   // console.log("point 2",obj3);
   console.log("point 3  :", id);
+  if (!loading) {
+    console.log("condition :", obj2[0].ppt);
+  }
   // const obj2 = obj3.filter((i) => i.id == id);
-  console.log("point 2,img", obj2[0].img);
+  // console.log("point 2,img", obj2[0].img);
 
   window.scrollTo(0, 0);
   if (loading) {
-    return <>loading</>;
+    return   <Loading></Loading>;
   }
 
   return (
@@ -38,7 +42,7 @@ function ProjectPageitem(props) {
           <h5>ABSTRACT</h5>
         </div>
         <div className={css.desc}>
-          <p>{obj2[0].abstract}</p>
+          <p className="textalign">{obj2[0].abstract}</p>
         </div>
         <div>
           <div className={css.subtitle}>
@@ -68,13 +72,25 @@ function ProjectPageitem(props) {
               <tr>
                 {/* <th scope="row">1</th> */}
                 <td>
-                  <a href={obj2[0].ppt}>link</a>
+                  {obj2[0].ppt === "ppt" ? (
+                    <p>Not Avilable</p>
+                  ) : (
+                    <a href={obj2[0].ppt}>link</a>
+                  )}
                 </td>
                 <td>
-                  <a href={obj2[0].report}>link</a>
+                {obj2[0].report === "report" ? (
+                    <p>Not Avilable</p>
+                  ) : (
+                    <a href={obj2[0].report}>link</a>
+                  )}
                 </td>
                 <td>
-                  <a href={obj2[0].code}>link</a>
+                {obj2[0].code === "code" ? (
+                    <p>Not Avilable</p>
+                  ) : (
+                    <a href={obj2[0].code}>link</a>
+                  )}
                 </td>
               </tr>
             </tbody>
@@ -91,7 +107,11 @@ function ProjectPageitem(props) {
         </div>
         <br />
         <div className={css.photos}>
-          <img  style={{width:"100%",height:"100%"}} src={obj2[0].img} alt="error" />
+          <img
+            style={{ width: "100%", height: "100%" }}
+            src={obj2[0].img}
+            alt="error"
+          />
         </div>
       </div>
       <br />

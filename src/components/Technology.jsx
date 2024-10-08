@@ -16,7 +16,7 @@ function Technology(props) {
     );
   }
   return (
-    <div className="center" style={{display:"flex"}}>
+    <div className="center" style={{display:"flex",flexWrap:"wrap"}}>
       {Tech.map(t=><button type="button" class="btn btn-info technologyused">{t}</button>)}
   
       
