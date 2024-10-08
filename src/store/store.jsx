@@ -64,9 +64,9 @@ function Store({ children }) {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
   const onsubmitbuttonskill = async (obj, pass) => {
-    const response = {};
+    
     try {
-      response = await axois.post(
+      const response = await axois.post(
         `https://pavanportfolio.pagekite.me/Skills/${pass}`,
         obj
       ).then(n=>(n.data==="ok")?seterroeresponse(1):seterroeresponse(2));
