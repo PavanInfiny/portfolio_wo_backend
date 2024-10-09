@@ -14,20 +14,23 @@ function Individualskills(props) {
         </div>
         <div className={css.skillprogressbar}>
           <div className="progress">
-            <div class="w3-border" style={{
-                  height: "24px",
-                  width: props.sprogress+"%",
-                  backgroundColor: "#8e8eff",
-                  textAlign:"center",
-                  color:"black",
-                  fontWeight:"800"
-                }}>
-                  {props.sprogress}%
+            <div
+              class="w3-border"
+              style={{
+                height: "24px",
+                width: props.sprogress + "%",
+                backgroundColor: "#8e8eff",
+                textAlign: "center",
+                color: "black",
+                fontWeight: "800",
+              }}
+            >
+              {props.sprogress}%
             </div>
           </div>
         </div>
         <div className={css.notes}>
-          <a href="">notes</a>
+          <a href={props.snotes}>notes</a>
         </div>
       </div>
     </>

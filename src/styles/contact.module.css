@@ -5,3 +5,10 @@
   flex-direction: row;
   justify-content: space-around;
 }
+@media only screen and (max-width: 480px) {
+  .Contact{
+
+    flex-direction: column;
+
+  }
+}

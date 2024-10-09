@@ -26,8 +26,7 @@
 }
 .photos{
   align-self: center;
-  width: 600px;
-  height: 500px;
+  width: 80%;
   border: solid black;
 }
 .desc{

@@ -4,6 +4,13 @@
   color: aliceblue;
   overflow: hidden;
 }
+@media only screen and (max-width: 480px) {
+  .complete {
+    width: 65%;
+    color: aliceblue;
+    overflow: hidden;
+  }
+}
 
 .h5tag {
   color: aliceblue;
@@ -17,8 +24,18 @@
   justify-content: center;
   color: aliceblue;
   overflow: hidden;
-
 }
+@media only screen and (max-width: 480px) {
+  .desc {
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+    overflow: hidden;
+    text-align: center;
+  }
+}
+
 .right{
   height: fit-content;
   width: fit-content;
@@ -58,6 +75,17 @@
   display: flex;
   /* justify-content: center; */
   align-items: center; 
+}
+@media only screen and (max-width: 480px) {
+  .slide1 {
+    border: 3px dotted rgb(96, 96, 96);
+    margin: 5% 5% 0px 5%;
+    height: fit-content;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
 }
 .slide1:hover{
   border: 3px solid rgb(229, 229, 229);

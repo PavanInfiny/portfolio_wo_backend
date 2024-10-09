@@ -43,7 +43,7 @@ function Slidebar() {
       onClick={()=>{setadminbutton("skill");seterrorresponse(0)}}>
           Edit skills
         </a>
-        {(adminbutton==="skill") && skillobjary.map(n=><button class="nav-link" onClick={()=>{setskilldropid(n.id);seterrorresponse(0)}} style={{color:(skilldropid===n.id)?"red":"grey",marginLeft:"30px"}} aria-current="page">Id number : {n.id}</button>) }
+        {(adminbutton==="skill") && skillobjary.map(n=><button class="nav-link" onClick={()=>{setskilldropid(n.id);seterrorresponse(0)}} style={{color:(skilldropid===n.id)?"red":"grey",marginLeft:"30px"}} aria-current="page">{n.id} : {n.name}</button>) }
       </li>
      
     </ul>

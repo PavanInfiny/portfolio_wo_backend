@@ -7,11 +7,12 @@
 }
 .skillname{
   padding: 0%;
-  width: 15%;
+  /* width: 15%; */
   height: 50px;
   text-align: right;
   color: aliceblue;
 }
+
 .skillprogressbar{
   display: flex;
   flex-direction: column;
@@ -20,7 +21,6 @@
 }
 .notes{
   display: flex;
-  width: 10%;
   flex-direction: column;
 }
 .notes a{
@@ -28,4 +28,12 @@
   text-decoration: none;
   color: aliceblue;
   justify-content: center;
+}
+@media only screen and (max-width: 480px) {
+  .skillname{
+    width: 40%;
+  }
+  .skillprogressbar{
+    width: 35%;
+  }
 }
