@@ -67,14 +67,17 @@
 }
 
 .slide1 {
-  border: 3px dotted rgb(96, 96, 96);
-  margin: 0px 5% 0px 5%;
-  margin-top: 5%;
-  height: 50%;
-  padding: 3%;
-  display: flex;
-  /* justify-content: center; */
-  align-items: center; 
+     border: 3px dotted rgb(96, 96, 96);
+    width: 90%;
+    margin-top: 80px;
+    /* margin: 0px 0% 0px 5%; */
+    /* margin-top: 5%; */
+    height: 50%;
+    padding: 3%;
+    display: flex
+;
+    /* justify-content: center; */
+    align-items: center;
 }
 @media only screen and (max-width: 480px) {
   .slide1 {

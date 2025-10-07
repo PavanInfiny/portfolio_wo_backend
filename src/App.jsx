@@ -1,6 +1,6 @@
 
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.css";
+
 import Slide1 from "./components/Slide1"
 import Header from "./components/header";
 import Projects from "./components/projects";

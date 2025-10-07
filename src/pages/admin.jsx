@@ -36,6 +36,7 @@ function Admin() {
 
   return (
     <>
+    {/* <Header></Header> */}
       <div class="mai">
         <div class="cla1" id="id1">
         <Slidebar></Slidebar>

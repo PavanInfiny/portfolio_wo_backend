@@ -12,10 +12,19 @@
 }
 .section{
   /* position: absolute; */
-  background-color: #101010;
-  width: 90%;
-  margin-left: 5%;
-  height: 100%;
-  align-items: center;
-  align-self: center;
+
+    /* position: absolute; */
+    display: flex
+;
+    background-color: #101010;
+    width: 100%;
+    /* margin-left: 5%; */
+    height: 100%;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+
 }

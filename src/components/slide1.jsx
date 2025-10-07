@@ -3,7 +3,7 @@ import image from "../assets/pic.png";
 function Slide1() {
   return (
     <>
-      <div className={`d-flex position-relative ${css.slide1}`}>
+      <div id="slide1" className={`d-flex position-relative ${css.slide1}`}>
         <div className={css.complete}>
           <img src={image} className="flex-shrink-0 me-3" alt="..." />
         </div>

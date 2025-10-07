@@ -21,10 +21,20 @@ function Skills(){
         </h1>
 
       </div>
-      <br />
-      <div>
+     
+      <div style={{width:"90%",}}>
+        <table className="" style={{color:"white",width:"100%"}}>
+              <tr>
+                <th style={{width:"10%",alignItems:"center"}} >Skill Name</th>
+                <th style={{width:"70%"}}>Progress Bar</th>
+                <th style={{width:"10%"}}>Notes</th>
+              </tr>
+           
+           
           {skillobjarray.map(n=>(
             <Individualskills sname={n.name} sprogress={n.percent} snotes={n.link} slno={n.id}></Individualskills>))}
+        
+            </table>
       </div>
     </>
   );

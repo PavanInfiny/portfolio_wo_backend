@@ -1,19 +1,15 @@
 import css from "../styles/individualskill.module.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import { FaArrowRight } from "react-icons/fa";
 function Individualskills(props) {
   console.log(props.sprogress);
 
   return (
     <>
-      <div className={css.skillcontent}>
-        <div className={css.skillname}>
-          <h5>
-            {props.sname} <FaArrowRight />
-          </h5>
-        </div>
-        <div className={css.skillprogressbar}>
-          <div className="progress">
+    <tr style={{marginTop:"10px",border:"1% black solid"}}>
+      <td > {props.sname}
+</td>
+      <td><div className={`progress`}>
             <div
               class="w3-border"
               style={{
@@ -27,12 +23,16 @@ function Individualskills(props) {
             >
               {props.sprogress}%
             </div>
-          </div>
-        </div>
+          </div></td>
+      <td><div className={css.skillcontent}>
+       
+        
         <div className={css.notes}>
-          <a href={props.snotes}>notes</a>
+          <button className="btn btn-primary" href={props.snotes}>Link</button>
         </div>
-      </div>
+      </div></td>
+    </tr>
+      
     </>
   );
 }

@@ -63,7 +63,7 @@ function ProjectPageitem(props) {
             <thead>
               <tr>
                 {/* <th scope="col">#</th> */}
-                <th scope="col">PPT</th>
+                <th scope="col">PPT / Project Link</th>
                 <th scope="col">Report</th>
                 <th scope="col">Code(Git)</th>
               </tr>
