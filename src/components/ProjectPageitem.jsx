@@ -7,7 +7,6 @@ import "@fontsource/open-sans";
 import Technology from "./Technology";
 import { useParams } from "react-router-dom";
 import Workingpoints from "./Workingpoints";
-import { Popover } from "bootstrap";
 import Loading from "./loading";
 
 function ProjectPageitem(props) {

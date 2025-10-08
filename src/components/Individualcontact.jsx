@@ -1,7 +1,5 @@
 import css from "../styles/Individualcontact.module.css";
-import { MdOutlineMailOutline } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
-import { FaPhone } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 function Individualcontact(props) {
   switch (props.n) {

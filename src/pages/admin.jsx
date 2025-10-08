@@ -1,11 +1,8 @@
 import React, { useContext, useState } from "react";
 import { Contextstore } from "../store/store";
 import Slidebar from "../components/slidebar";
-import Header from "../components/header";
 import Adminprojects from "../components/adminprojects";
-import ProjectComponent from "../components/ProjectComponent";
 import Adminskills from "../components/Adminskills";
-import { CgSearchLoading } from "react-icons/cg";
 import Loading from "../components/loading";
 function Admin() {
   const contextobj=useContext(Contextstore);

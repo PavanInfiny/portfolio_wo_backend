@@ -1,9 +1,6 @@
 import React, { useContext } from "react";
 import Individualcomponent from "./individualprojects";
 import css from "../styles/projects.module.css";
-import img1 from "../assets/1.png";
-import img2 from "../assets/2.png";
-import img3 from "../assets/3.png";
 import { Contextstore } from "../store/store";
 const Projects = () => {
   // let projectdesc={

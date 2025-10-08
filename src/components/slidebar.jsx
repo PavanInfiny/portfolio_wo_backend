@@ -1,7 +1,5 @@
 import React, { useContext } from 'react'
-import Header from './header';
 import { Contextstore } from '../store/store';
-import { Button } from 'bootstrap';
 import { Link } from 'react-router-dom';
 
 function Slidebar() {

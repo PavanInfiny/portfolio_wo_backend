@@ -1,6 +1,5 @@
 import css from "../styles/individualskill.module.css";
 
-import { FaArrowRight } from "react-icons/fa";
 function Individualskills(props) {
   console.log(props.sprogress);
 
