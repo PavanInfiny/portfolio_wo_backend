@@ -1,4 +1,4 @@
-import css from "../styles/Slide1.module.css";
+import css from "../styles/slide1.module.css";
 import image from "../assets/pic.png";
 function Slide1() {
   return (
