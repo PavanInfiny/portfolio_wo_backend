@@ -2,7 +2,7 @@ import Contact from "../components/contact";
 import Header from "../components/header";
 import Projects from "../components/projects";
 import Skills from "../components/skills";
-import Slide1 from "../components/Slide1";
+import Slide1 from "../components/slide1";
 
 function Home() {
   return (
