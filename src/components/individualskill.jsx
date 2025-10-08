@@ -27,7 +27,7 @@ function Individualskills(props) {
        
         
         <div className={css.notes}>
-          <button className="btn btn-primary" href={props.snotes}>Link</button>
+          <a className="btn btn-primary" href={props.snotes}>Link</a>
         </div>
       </div></td>
     </tr>
