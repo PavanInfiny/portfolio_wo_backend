@@ -5,7 +5,7 @@ function Header() {
   return (
     <>
       <div className={`${css.nav}`}>
-        <nav className="navbar navbar-expand-lg bg-body-primary">
+        <nav className="navbar navbar-expand-lg bg-body-primary" style={{borderRadius:"10px"}}>
           <div className="container-fluid">
             
             <button
@@ -22,13 +22,15 @@ function Header() {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav">
                 <a className="nav-link active"
-                  aria-current="page" href="#">
+                  aria-current="page" href="#" style={{color:"white"}} id="hoverColorChange">
                   Home
                 </a>
                 <a
                   className="nav-link active"
                   aria-current="page"
                   href="#skills"
+                  style={{color:"white"}}
+                  id="hoverColorChange"
                 >
                   Skills
                 </a>
@@ -36,6 +38,8 @@ function Header() {
                   className="nav-link active"
                   aria-current="page"
                   to="/admin"
+                  style={{color:"white"}}
+                  id="hoverColorChange"
                 >
                   admin
                 </Link>

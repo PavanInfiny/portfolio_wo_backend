@@ -225,6 +225,27 @@ setloading(false);
         link: "https://drive.google.com/file/d/1nlWUHQZmYxYbC8jhM1mcQTK7zH6q70d9/view?usp=sharing",
         percent: "70",
       },
+      ,
+      {
+        id: 11,
+        name: "C#",
+        link: "https://drive.google.com/file/d/12Jd4N378IViiZaK4xchG-YVo52zmlbk8/view?usp=sharing",
+        percent: "70",
+      },
+
+      {
+        id: 12,
+        name: "DotNet",
+        link: "https://drive.google.com/file/d/12Jd4N378IViiZaK4xchG-YVo52zmlbk8/view?usp=sharing",
+        percent: "70",
+      },
+
+      {
+        id: 13,
+        name: "Angular",
+        link: "https://drive.google.com/file/d/12Jd4N378IViiZaK4xchG-YVo52zmlbk8/view?usp=sharing",
+        percent: "70",
+      }
     ];
     setskills(data);
     setskillload(false);
